@@ -1,0 +1,90 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.MyApplication" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+    <style name="screen">
+        <item name="android:background">@color/screen</item>
+    </style>
+    <!-- TEXT for light theme -->
+    <style name="TEXT">
+        <item name="android:textColor">@color/light_mode_text</item>
+    </style>
+    <!-- MUSIC AND DARK MODE TEXT for light theme -->
+    <style name="MDTEXT">
+        <item name="android:textColor">@color/light_mode_mdtext</item>
+    </style>
+    <!-- BUTTONS for light theme -->
+    <style name="BUTTONS">
+        <item name="android:textColor">@color/light_mode_buttons_text</item>
+        <item name="android:backgroundTint">@color/light_mode_buttons</item>
+    </style>
+    <!-- BAR for light theme -->
+    <style name="BAR">
+        <item name="android:background">@color/light_mode_bar</item>
+    </style>
+    <!-- SETTINGS BUTTON for light theme -->
+    <style name="BUTTONSFORSETTINGS">
+        <item name="android:textColor">@color/light_mode_buttons_text</item>
+        <item name="android:backgroundTint">@color/light_mode_buttons_settings</item>
+    </style>
+
+    <style name="SCORE">
+        <item name="android:textColor">@color/light_mode_score</item>
+    </style>
+    <!-- SUBMIT BUTTON for light theme -->
+
+    <style name="SUBMIT">
+        <item name="android:textColor">@color/light_mode_submit_text</item>
+        <item name="android:backgroundTint">@color/light_mode_submit</item>
+    </style>
+
+    <style name="WHATAMI">
+        <item name="android:textColor">@color/light_mode_whatami</item>
+    </style>
+
+    <style name="BARGAME">
+        <item name="android:background">@color/light_mode_bar2</item>
+    </style>
+
+    <style name="TOOLBAR">
+        <item name="android:background">@color/light_mode_toolbar</item>
+    </style>
+
+
+    <!-- Dark theme -->
+    <style name="Theme.MyApplication.Dark" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:windowBackground">@color/screen.dark</item>
+    </style>
+    <!-- BUTTONS for dark theme -->
+    <style name="BUTTONS.Dark">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:backgroundTint">#333333</item>
+    </style>
+
+    <!-- SUBMIT BUTTON for dark theme -->
+    <style name="SUBMIT.Dark">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:backgroundTint">#444444</item>
+    </style>
+
+    <!-- MUSIC AND DARK MODE TEXT for dark theme -->
+    <style name="MDTEXT.Dark">
+        <item name="android:textColor">#CCCCCC</item>
+    </style>
+
+    <!-- TEXT for dark theme -->
+    <style name="TEXT.Dark">
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+    <!-- BAR for dark theme -->
+    <style name="BAR.Dark">
+        <item name="android:background">#333333</item>
+    </style>
+
+    <style name="WHATAMI.Dark">
+        <item name="android:textColor">@color/dark_mode_whatami</item>
+    </style>
+
+</resources>

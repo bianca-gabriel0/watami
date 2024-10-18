@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- SEEKBAR COLORS.. -->
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="dark_thumb">#6E1298</color>
+    <color name="light_thumb">#AB7FA2</color>
+    <color name="progress_color">#AB7FA2</color>
+    <color name="sixty_opacity_white">#8CFFFFFF</color>
+    <!-- SCREEN LIGHT THEME.. -->
+    <color name="screen">#F5F2F0</color>
+    <!-- SCREEN DARK THEME.. -->
+    <color name="screen.dark">#000000</color>
+
+
+
+    <!-- UI ELEMENTS FOR LIGHT THEME.. -->
+    <color name="light_mode_text">#946658</color>
+    <color name="light_mode_mdtext">#4c4c4c</color>
+    <color name="light_mode_buttons">#9D7265</color>
+    <color name="light_mode_buttons_settings">#AB7FA2</color>
+    <color name="light_mode_buttons_text">#ffff</color>
+    <color name="light_mode_bar">#BC9F8B </color>
+    <color name="light_mode_submit_text">#ffffff</color>
+    <color name="light_mode_submit">#7A523F</color>
+    <color name="light_mode_whatami">#D4B18A</color>
+    <color name="light_mode_bar2">#7A523F</color>
+    <color name="light_back_button_tint_color">#946658</color>
+    <color name="light_mode_score">#946658</color>
+    <color name="light_mode_toolbar">#FFFFFF</color>
+
+    <!-- UI ELEMENTS FOR DARK THEME.. -->
+    <color name="dark_mode_text">#F4F4F4</color>
+    <color name="dark_mode_mdtext">#E9E9E9</color>
+    <color name="dark_mode_buttons">#F6F5F5</color>
+    <color name="dark_mode_buttons_text">#000000</color>
+    <color name="dark_mode_bar">#C1C1C1</color>
+    <color name="dark_mode_submit">#FFFFFF</color>
+    <color name="dark_screen">#333333</color>
+    <color name="dark_primary">#444444</color>
+    <color name="dark_primary_dark">#555555</color>
+    <color name="dark_accent">#FFC107</color>
+    <color name="dark_mode_whatami">#FFFFFF</color>
+    <color name="dark_back_button_tint_color">#FFFFFF</color>
+    <color name="dark_mode_score">#F4F4F4</color>
+    <color name="dark_mode_buttons_settings">#AB7FA2</color>
+
+
+</resources>
