@@ -1,7 +1,7 @@
 package com.example.myapplication
 
-import DatabaseHelper
-import Riddle
+import com.example.myapplication.DatabaseHelper
+import com.example.myapplication.DatabaseHelper.Riddle
 import android.annotation.SuppressLint
 import android.content.Context
 import android.content.Intent
