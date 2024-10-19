@@ -10,6 +10,7 @@ import android.view.View
 import android.widget.Button
 import android.widget.ImageButton
 import android.widget.TextView
+import android.widget.Toolbar
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.app.AppCompatDelegate
@@ -25,6 +26,7 @@ class How_To_Play : AppCompatActivity() {
     private lateinit var brownbar: View
     private lateinit var instructions: TextView
     private lateinit var scoringbase: TextView
+    private lateinit var toolbar : Toolbar
 
     @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -76,6 +78,7 @@ class How_To_Play : AppCompatActivity() {
         backtogame.setImageResource(R.drawable.backbutton_dark)
         instructions.setTextColor(ContextCompat.getColor(this,R.color.dark_mode_mdtext))
         scoringbase.setTextColor(ContextCompat.getColor(this,R.color.dark_mode_mdtext))
+        toolbar.setBackgroundColor(ContextCompat.getColor(this,R.color.dark_mode_toolbar))
 
     }
     private fun updateLightModeUI() {
@@ -85,6 +88,6 @@ class How_To_Play : AppCompatActivity() {
         backtogame.setImageResource(R.drawable.backbutton)
         instructions.setTextColor(ContextCompat.getColor(this,R.color.light_mode_mdtext))
         scoringbase.setTextColor(ContextCompat.getColor(this,R.color.light_mode_mdtext))
-
+        toolbar.setBackgroundColor(ContextCompat.getColor(this,R.color.light_mode_toolbar))
     }
 }

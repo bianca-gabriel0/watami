@@ -27,10 +27,10 @@
             android:name=".Activity_Game_to_Settings"
             android:exported="false" />
         <activity
-            android:name=".Activity_Settings"
+            android:name=".Activity_Game"
             android:exported="false" />
         <activity
-            android:name=".Activity_Game"
+            android:name=".Activity_Settings"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

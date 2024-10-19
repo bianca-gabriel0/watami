@@ -13,6 +13,7 @@ import android.widget.ImageButton
 import android.widget.ImageView
 import android.widget.SeekBar
 import android.widget.TextView
+import android.widget.Toolbar
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.app.AppCompatDelegate
@@ -21,7 +22,7 @@ import androidx.core.content.ContextCompat
 class Activity_Game_to_Settings : AppCompatActivity() {
 
     private lateinit var backtogame: ImageButton
-
+    private lateinit var toolbar: Toolbar
     private lateinit var ChangeTheme: Button
     private lateinit var sharedPreferences: SharedPreferences
     private lateinit var editor: SharedPreferences.Editor
@@ -54,14 +55,6 @@ class Activity_Game_to_Settings : AppCompatActivity() {
             val intent3 = Intent(this, MainActivity::class.java)
             startActivity(intent3)
         }
-
-
-        //this.quit = findViewById(R.id.quit)
-        //quit.setOnClickListener {
-        //soundPool.play(soundId, 1f, 1f, 1, 0, 1f)
-        //val intent3 = Intent(this, MainActivity::class.java)
-        //startActivity(intent3)
-        //}
 
         val audioManager = getSystemService(Context.AUDIO_SERVICE) as AudioManager
         val maxVolume = audioManager.getStreamMaxVolume(AudioManager.STREAM_MUSIC)
@@ -132,6 +125,7 @@ class Activity_Game_to_Settings : AppCompatActivity() {
             backtogame.setImageResource(R.drawable.backbutton_dark)
             textView.setTextColor(ContextCompat.getColor(this, R.color.dark_mode_text))
             exit.setImageResource(R.drawable.dark_mode_exit)
+            toolbar.setBackgroundColor(ContextCompat.getColor(this,R.color.dark_mode_toolbar))
 
         } else {
             // Update UI elements for light mode
@@ -145,8 +139,8 @@ class Activity_Game_to_Settings : AppCompatActivity() {
             backtogame.setImageResource(R.drawable.backbutton)
             textView.setTextColor(ContextCompat.getColor(this, R.color.light_mode_text))
             exit.setImageResource(R.drawable.exitbutton)
+            toolbar.setBackgroundColor(ContextCompat.getColor(this, R.color.light_mode_toolbar))
         }
     }
 }
 
-// Update UI elements

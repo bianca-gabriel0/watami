@@ -44,6 +44,6 @@
     <color name="dark_back_button_tint_color">#FFFFFF</color>
     <color name="dark_mode_score">#F4F4F4</color>
     <color name="dark_mode_buttons_settings">#AB7FA2</color>
-
+    <color name="dark_mode_toolbar">#000000</color>
 
 </resources>
