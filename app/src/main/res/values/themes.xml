@@ -88,7 +88,7 @@
     </style>
 
     <style name="TOOLBAR.DArk">
-        <item name="android:background"></item>
+        <item name="android:background">@color/dark_mode_toolbar</item>
     </style>
 
 </resources>

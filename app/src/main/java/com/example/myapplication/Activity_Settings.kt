@@ -11,7 +11,7 @@ import android.widget.Button
 import android.widget.ImageButton
 import android.widget.SeekBar
 import android.widget.TextView
-import android.widget.Toolbar
+import androidx.appcompat.widget.Toolbar
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.app.AppCompatDelegate
@@ -30,6 +30,7 @@ class Activity_Settings : AppCompatActivity() {
     private lateinit var darkmode: TextView
     private lateinit var screen: View
     private lateinit var toolbar: Toolbar
+
 
     @SuppressLint("MissingInflatedId", "WrongViewCast")
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -77,6 +78,7 @@ class Activity_Settings : AppCompatActivity() {
         musictext = findViewById(R.id.musictext)
         darkmode = findViewById(R.id.darkmode)
         screen = findViewById(R.id.screen)
+        toolbar = findViewById(R.id.toolbar)
 
         // Set the dark mode button listener
         ChangeTheme.setOnClickListener {
@@ -106,7 +108,8 @@ class Activity_Settings : AppCompatActivity() {
             ChangeTheme.setTextColor(ContextCompat.getColor(this, R.color.light_mode_buttons_text))
             ChangeTheme.setBackgroundColor(ContextCompat.getColor(this, R.color.dark_mode_buttons_settings))
             backtogame.setImageResource(R.drawable.backbutton_dark)
-            toolbar.setBackgroundColor(ContextCompat.getColor(this,R.color.dark_mode_toolbar))
+            toolbar.setBackgroundColor(ContextCompat.getColor(this, R.color.dark_mode_toolbar))
+
 
         } else {
 
@@ -119,7 +122,8 @@ class Activity_Settings : AppCompatActivity() {
             ChangeTheme.setBackgroundColor(ContextCompat.getColor(this, R.color.light_mode_buttons_settings))
             ChangeTheme.setTextColor(ContextCompat.getColor(this, R.color.light_mode_buttons_text))
             backtogame.setImageResource(R.drawable.backbutton )
-            toolbar.setBackgroundColor(ContextCompat.getColor(this,R.color.light_mode_toolbar))
+            toolbar.setBackgroundColor(ContextCompat.getColor(this, R.color.light_mode_bar))
+
         }
     }
 }

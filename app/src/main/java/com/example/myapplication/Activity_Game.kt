@@ -15,6 +15,7 @@
     import androidx.appcompat.app.AppCompatActivity
     import androidx.appcompat.app.AppCompatDelegate
     import androidx.core.content.ContextCompat
+    import androidx.appcompat.widget.Toolbar
 
     class Activity_Game : AppCompatActivity() {
 
@@ -31,11 +32,12 @@
         private lateinit var tv_optionThree: TextView
         private lateinit var ScoreOutput: TextView
         private lateinit var Score: TextView
+        private lateinit var toolbar: Toolbar
 
         private var currentQuestionIndex = 0
         private var score = 0
-        private lateinit var questions: List<Game> // Assuming Game contains question and options
-        private lateinit var databaseHelper: DatabaseHelper
+        //private lateinit var questions: List<Game> // Assuming Game contains question and options
+       // private lateinit var databaseHelper: DatabaseHelper
 
         @SuppressLint("MissingInflatedId")
         override fun onCreate(savedInstanceState: Bundle?) {
@@ -47,6 +49,7 @@
             tv_optionOne = findViewById(R.id.tv_optionOne)
             tv_optionTwo = findViewById(R.id.tv_optionTwo)
             tv_optionThree = findViewById(R.id.tv_optionThree)
+            toolbar = findViewById<Toolbar>(R.id.toolbar)
 
             // Initialize sound pool
             val soundPool = SoundPool.Builder().build()
@@ -105,6 +108,7 @@
             ScoreOutput.setTextColor(ContextCompat.getColor(this, R.color.dark_mode_text))
             settings2.setImageResource(R.drawable.dark_mode_settingsbutton)
             ResetButton.setImageResource(R.drawable.dark_mode_resetbutton)
+            toolbar.setBackgroundColor(ContextCompat.getColor(this, R.color.dark_mode_toolbar))
         }
 
         private fun updateLightModeUI() {
@@ -116,5 +120,6 @@
             ScoreOutput.setTextColor(ContextCompat.getColor(this, R.color.light_mode_score))
             settings2.setImageResource(R.drawable.settingsbutton)
             ResetButton.setImageResource(R.drawable.resetbutton)
+            toolbar.setBackgroundColor(ContextCompat.getColor(this, R.color.light_mode_bar))
         }
     }
